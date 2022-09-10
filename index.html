@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .notes {
+            color: aquamarine;
+        }
+    </style>
+    <title>Lesson_3 - Осінь 2022</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="id-header">
+            <h1 class="header-title">css властивість color</h1>
+            <div class="header-section">
+                <ul class="header-section-list">
+                    <li><a href="#id-color">Властивості атрибуту "color"</a></li>
+                    <li><a href="#id-attributes">Загальні атрибути</a>
+                        <ol>
+                            <li><a href="#id-class">Загальний html атрибут class</a></li>
+                            <li><a href="#id-title">Загальний html атрибут title</a></li>
+                            <li><a href="#id-style">Загальний html атрибут style</a></li>
+                            <li><a href="#id-tabindex">Загальний html атрибут tabindex</a></li>
+                            <li><a href="#id-id">Загальний html атрибут id</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <hr>
+        </header>
+        <main class="main">
+            <div class="content-body">
+                <div class="property">
+                    <div class="color-property" id="id-color">
+                        <div class="color-property-text-top" style="color: orange;">
+                            Властивість <span class="red">color</span> задає колір тексту та його оздоблення, котре
+                            задане
+                            за допомогою властивості <span class="green">text-decoration</span>.
+                        </div>
+                        <div class="color-property-image">
+                            <p>Ми можемо встановлювати колір для тексту, використовуючи різні значення:</p>
+                            <img src="img/01.png" alt="Можливі значення для встановлення кольору тексту">
+                        </div>
+                        <div class="color-property-text-bottom">
+                            <p>Ця властивість може приймати як однорідний колір так і прозорість, але на відміну від
+                                зображень не може бути градієнтом.
+                            </p>
+                            <p>Ти також можеш задати прозорість окремо, за допомогою властивості
+                                <span class="red">opacity</span>.
+                            </p>
+                        </div>
+                        <div class="color-property-list">
+                            <p>Значення властивості <span style="color: blue;">color</span> можуть успадковувати й інші
+                                <span style="color: yellow;">css</span> властивості, як наприклад:
+                            </p>
+                            <ul>
+                                <li>кордони (якщо колір не був для них заданий окремо за допомогою властивості
+                                    <span class="red">border-color</span>).
+                                </li>
+                                <li>маркери списків (при умові, що вигляд маркера не було змінено за допомогою
+                                    властивості <span class="red">list-style-image</span>, тоді властивість color не
+                                    спрацює, бо маркер буде зображенням, а <span class="green">color
+                                    </span> застосовується тільки до тексту).
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="color-property-advice">
+                            <h3>Порада:</h3>
+                            <p>
+                                Використовуйте <span class="green">background-color</span> і <span
+                                    class="red">color</span>,
+                                щоб встановити колір тла та тексту, це допоможе зробити текст легшим для читання.
+                            </p>
+                        </div>
+                        <div class="color-property-note">
+                            <h3 class="notes">Нотатка:</h3>
+                            <p>Дія цієї властивості не поширюється на посилання.</p>
+                        </div>
+                    </div>
+                    <div class="syntax">
+                        <div class="syntax-image">
+                            <img src="img/02.png" alt="Приклад використання властиваості &#34;color&#34; ">
+                        </div>
+                        <div class="syntax-value">
+                            <h4>Властивість color може отримувати 6 значень:</h4>
+                            <ul>
+                                <li><mark>color</mark>: - Колір тексту.</li>
+                                <li><mark>initial</mark>: - Встановлює властивість у значення без задання.</li>
+                                <li><mark>inherit</mark>: - Вказує на спадковість властивості від свого батьківського
+                                    елемента.
+                                </li>
+                                <li><mark>currentColor</mark>: - Теж саме, що inherit.</li>
+                                <li><mark>transparent</mark>: - Робить текст прозорим (невидимим).</li>
+                                <li><mark>unset</mark>: - Комбінація ключових слів initial і inherit. Встановлює
+                                    значення
+                                    властивості як inherit, якщо властивість успадковується від свого батька, в іншому
+                                    випадку значення встановлюється як initial.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="general-attributes" id="id-attributes">
+                    <h2 class="general-attributes-title"><span class="red">Загальні атрибути</span></h2>
+                    <div class="general-attributes-info">
+                        <p>В HTML є кілька атрибутів, які є загальними для всіх елементів, такі атрибути звуться
+                            загальними, ґлобальними чи універсальними.
+                        </p>
+                        <p>Ці атрибути можуть використовуватися з усіма тегами, хоча на деякі з них вони можуть ніяк не
+                            впливати.
+                        </p>
+                        <p>Всі зазначені нижче атрибути є загальними і можуть бути вказані до будь-якого HTML елемента
+                        </p>
+                    </div>
+                    <ol class="general-attributes-list">
+                        <li><a href="#id-title">title</a> Вказує додаткову текстову підказку
+                        </li>
+                        <li><a href="#id-class">class</a> Визначає один або кілька класів, щоб зв’язати елемент з
+                            таблицею
+                            стилів (CSS).
+                        </li>
+                        <li><a href="#id-id">id</a> Задає унікальний ідентифікатор для елемента.
+                        </li>
+                        <li><a href="#id-style">style</a> Задає вбудований (inline) CSS стиль для елемента.
+                        </li>
+                        <li><a href="#id-tabindex">tabindex</a> Встановлює порядок отримання фокусу при переході між
+                            елементами за
+                            допомогою клавіші `Tab`.
+                        </li>
+                    </ol>
+                    <div class="general-attributes-description">
+                        <hr>
+                        <h4> <mark><span class="red">Докладніше по кожному атрибуту:</span></mark></h4>
+                        <hr>
+
+                        <div class="general-attributes-items">
+                            <div class="general-attributes-item-class" id="id-class">
+                                <h2><span class="red">Загальний html атрибут class</span></h2>
+                                <div class="general-attributes-item-class-info">
+                                    <p>Атрибут class задає стильовий клас, який дозволяє зв'язати певний тег зі
+                                        стильовим оформленням.
+                                    </p>
+                                    <p>Атрибут class, в основному, використовується для вказівки на клас в каскадній
+                                        таблиці стилів (CSS). Тим не менш, він також може бути використаний в JavaScript
+                                        (через HTML DOM), щоб внести зміни в HTML елемент з зазначеним класом.
+                                    </p>
+                                    <div class="general-attributes-item-class-note">
+                                        <h3 class="notes">Нотатки:</h3>
+                                        <p>
+                                            При вказівці імені класу враховується регістр символів. Відтак «classname» і
+                                            «ClassName» два різних ідентифікатора.
+                                        </p>
+                                        <p>
+                                            Атрибут class дозволяє одночасно задавати кілька імен класу, розділяючи їх
+                                            знаком пригалини. Це дозволяє застосувати кілька CSS класів для одного HTML
+                                            елемента.
+                                        </p>
+                                        <p>
+                                            У HTML4 імена класів можуть містити в собі латинські букви (A-Z, a-z), цифри
+                                            (0-9), символ дефіса (-) і підкреслення (_) і не повинні починатися з цифри.
+                                            Використання кирилиці в класах неприпустимо. У HTML5 ці обмеження зняті, але
+                                            для сумісності зі старими браузерами і JavaScript рекомендується
+                                            дотримуватися цих правил.
+                                        </p>
+                                    </div>
+                                    <div class="general-attributes-item-syntax syntax-item">
+                                        <h2>Синтакс</h2>
+                                        <div class="syntax-item-image">
+                                            <img src="img/03.png" alt="Приклад використання атрибуту &#34;class&#34;">
+                                            <div class="syntax-item-info">
+                                                <div class="syntax-item-info-title">Атрибут class може отримувати єдине
+                                                    значення :
+                                                </div>
+                                                <ul class="syntax-item-info-list">
+                                                    <li><span class="red">classname</span>:
+                                                        Задає один або кілька імен класів для елемента.
+                                                        <ul>
+                                                            <li>Правила іменування:
+                                                                <ol>
+                                                                    <li>Назва класу повинна починатися з літери A-Z або
+                                                                        a-z</li>
+                                                                    <li>Назва класу може містити: літери (A-Z, a-Z),
+                                                                        цифри (0-9), дефісів ("-") та підкреслення ("_")
+                                                                    </li>
+                                                                    <li>В HTML, всі значення чутливі до регістру</li>
+                                                                </ol>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="general-attributes-item" id="id-title">
+                            <div class="attribut-title">
+                                <div class="attribut-title-name">
+                                    <h2><span class="red">Загальний html атрибут title</span></h2>
+                                </div>
+                                <div class="attribut-title-section">
+                                    <h3>Опис та застосування</h3>
+                                </div>
+                                <div class="attribut-title-content">
+                                    <P>Додає підказку з текстом, яка з'являється при наведенні курсору на елемент.
+                                        Вид такої
+                                        підказки залежить від браузера, налаштувань операційної системи і не може
+                                        бути змінений
+                                        безпосередньо за допомогою HTML-коду або стилів.
+                                    </P>
+                                    <div class="attribut-title-content-image">
+                                        <img src="img/04.png" alt="Приклад використання атрибуту &#34;title&#34;">
+                                    </div>
+                                </div>
+                                <div class="attribut-title-syntax">
+                                    <h3>Синтакс</h3>
+                                    <div class="attribut-title-syntax-image">
+                                        <img src="img/05.png" alt="Приклад заповнення атрибуту &#34;title&#34;">
+                                    </div>
+                                    <div class="attribut-title-syntax-text">
+                                        Атрибут title не має жодного значення :
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="general-attributes-item" id="id-style">
+                            <div class="attribut-style">
+                                <div class="attribut-style-name">
+                                    <h2><span class="red">Загальний html атрибут style</span></h2>
+                                </div>
+                                <div class="attribut-style-section">
+                                    <h3>Опис та застосування</h3>
+                                </div>
+                                <div class="attribut-style-content">
+                                    <p>
+                                        Глобальний атрибут style задає вбудований (inline) CSS стиль для елемента.
+                                        Допускається
+                                        використання декількох властивостей і значень, які необхідно розділяти між
+                                        собою крапкою з
+                                        комою.
+                                    </p>
+                                    <div class="attribut-style-content-image">
+                                        <img src="img/06.png" alt="Приклад використання атрибуту &#34;style&#34;">
+                                    </div>
+                                </div>
+                                <div class="attribut-style-syntax">
+                                    <h3>Синтакс</h3>
+                                    <div class="attribut-style-syntax-image">
+                                        <img src="img/07.png" alt="Приклад заповнення атрибуту &#34;style&#34;">
+                                    </div>
+                                    <div class="attribut-style-syntax-text">
+                                        <p>Атрибут <strong>style</strong> може отримувати єдине значення :</p>
+                                        <p><span class="red">style</span>: Як значення вказуються стильові правила:
+                                            спочатку слід
+                                            ім'я стильової властивості, потім через двокрапку його значення.
+                                            Стильові властивості
+                                            поділяються між собою крапкою з комою.
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="general-attributes-item" id="id-tabindex">
+                            <div class="attribut-tabindex">
+                                <div class="attribut-tabindex-name">
+                                    <h2><span class="red">Загальний html атрибут tabindex</span></h2>
+                                </div>
+                                <div class="attribut-tabindex-section">
+                                    <h3>Опис та застосування</h3>
+                                </div>
+                                <div class="attribut-tabindex-content">
+                                    <p>
+                                        Атрибут tabindex встановлює порядок отримання фокусу при переході між
+                                        елементами за допомогою клавіші Tab. Перехід відбувається від меншого
+                                        значення до більшого, наприклад від 1 до 2, потім до 3 і так далі. При
+                                        цьому сувора послідовність не важлива, допускається пропускати якісь
+                                        числа і починати з будь-цифри. Якщо значення tabindex у елементів
+                                        збігаються, тоді враховується їх порядок появи в коді. Заблоковані
+                                        елементи (у яких встановлено атрибут disabled) не беруть участі в
+                                        переході і фокус не отримують.
+                                        <strong>Порада:</strong> Максимальне значення не повинно перевищувати
+                                        32767.
+                                    </p>
+                                </div>
+                                <div class="attribut-tabindex-syntax">
+                                    <h3>Синтакс</h3>
+                                    <div class="attribut-tabindex-syntax-image">
+                                        <img src="img/08.png" alt="Приклад заповнення атрибуту &#34;title&#34;">
+                                    </div>
+                                    <div class="attribut-tabindex-syntax-text">
+                                        <p>Атрибут <span class="red">tabindex</span> не має жодного значення :</p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="general-attributes-item" id="id-id">
+                            <div class="attribut-id">
+                                <div class="attribut-id-name">
+                                    <h2><span class="red">Загальний html атрибут id</span></h2>
+                                </div>
+                                <div class="attribut-id-section">
+                                    <h3>Опис та застосування</h3>
+                                </div>
+                                <div class="attribut-id-content">
+                                    <div>
+                                        Задає стильової ідентифікатор - унікальне ім'я елемента, яке використовується
+                                        для зміни його стилю і звернення до нього через скрипти. <strong> Ідентифікатор
+                                            в коді документа повинен бути в єдиному екземплярі, іншими словами,
+                                            зустрічатися тільки один раз.</strong>
+                                    </div>
+                                    <div class="attribut-id-content-rules content-rules">
+                                        <div class="content-rules-title">
+                                            Правила:
+                                        </div>
+                                        <ul>
+                                            <li>Використовуйте тільки літери алфавіту (A-Z, a-z), числа, дефіси, знаки
+                                                підкреслення.
+                                            </li>
+                                            <li>Ідентифікатор не повинен містити будь-яких пропусків.</li>
+                                            <li>Ідентифікатор на сторінці використовується тільки до одного елементу.
+                                            </li>
+                                            <li>Ідентифікатори чутливі до регістру (#css-in-ua і #Css-In-UA різні
+                                                ідентифікатори).
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="attribut-id-syntax">
+                                    <h3>Синтакс</h3>
+                                    <div class="attribut-id-syntax-image">
+                                        <img src="img/09.png" alt="Приклад заповнення атирбуту &#34;id&#34;">
+                                    </div>
+                                    <div class="attribut-id-syntax-text">
+                                        <p>Атрибут <strong>id</strong> не має жодного значення :</p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </main>
+        <footer class="footer">
+            <br>
+            <div class="foorer-title">
+                <a href="#id-header"><mark>Повернутись на початок сторінки</mark></a>
+            </div>
+            <br>
+            <div class="footer-subtitle" id="id-footer-subtitle"><b>Курс Осінь-2022 р.</b></div>
+            <br>
+            <br>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.wrepper {
+    color: #000;
+}
+
+
+span.red {
+    color: red;
+}
+
+span.green {
+    color: green;
+}
+
+.general-attributes-info>p {
+    color: blueviolet;
+}
+
+.general-attributes-item-class-note .notes+p {
+    color: chartreuse;
+}
+
+.syntax-item-info-list ol * {
+    color: aqua;
+}
+
+.content-rules div~ul {
+    color: tomato;
+}
+
+#id-footer-subtitle {
+    color: blueviolet;
+}
